@@ -21,6 +21,8 @@
   <div class="col-sm-3" *ngFor="let perfil of perfiles">
     <app-user-perfil [nombreUsuario]="perfil.nombrePerfil"
                      [urlImagen]="'/assets/imagenes/'+perfil.nombreImagen"
+                     (seleccionarUsuario)="usuario($event)"
+
     ></app-user-perfil>
   </div>
 </div>
@@ -75,7 +77,8 @@
     <div class="col-sm-3" *ngFor="let perfil of perfiles2">
       <app-modelo-hijo [atributoH1]="perfil.nombrePerfil"
                        [atributoH2]="perfil.nombrePerfil"
-                       [imgHijo]="'/assets/imagenes/'+perfil.nombreImagen">
+                       [imgHijo]="'/assets/imagenes/'+perfil.nombreImagen"
+      [btn]="'Pedir Transferencia'">
       </app-modelo-hijo>
     </div>
   </div>

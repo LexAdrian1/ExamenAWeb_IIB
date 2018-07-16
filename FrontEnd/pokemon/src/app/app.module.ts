@@ -5,17 +5,23 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {FormsModule} from "@angular/forms";
 import { InicioComponent } from './inicio/inicio.component';
-import { PerfilUsuarioComponent } from './perfil/perfil-usuario.component';
 import {RouterModule} from "@angular/router";
 import {Mis_Rutas} from "./app.routes";
 import {HttpClientModule} from "@angular/common/http";
 import { NavBarMainComponent } from './nav-bar-main/nav-bar-main.component';
-import { UserPerfilComponent } from './ComponentesUsuarios/user-perfil/user-perfil.component';
+import { UserPerfilComponent } from './componentesUsuario/user-perfil/user-perfil.component';
 import { ModeloHijoComponent } from './componentesHijos/modelo-hijo/modelo-hijo.component';
 import { ModeloPapaComponent } from './componentesPapas/modelo-papa/modelo-papa.component';
-import { ButonVisitarComponent } from './ComponentesUsuarios/buton-visitar/buton-visitar.component';
-import { TransferenciaComponent } from './transferencia/transferencia.component';
+import { ButonVisitarComponent } from './componentesUsuario/buton-visitar/buton-visitar.component';
 import { ButonTransferirComponent } from './componentesHijos/buton-transferir/buton-transferir.component';
+import { PeticionTransferenciaComponent } from './peticion-transferencia/peticion-transferencia.component';
+import { SolicitudTransferenciaComponent } from './solicitud-transferencia/solicitud-transferencia.component';
+import { PerfilDelUsuarioComponent } from './perfil-del-usuario/perfil-del-usuario.component';
+import { ItemPeticionComponent } from './componentesSolicitud/item-peticion/item-peticion.component';
+import { BtnAceptarComponent } from './componentesPerfil/btn-aceptar/btn-aceptar.component';
+import { BtnRechazarComponent } from './componentesPerfil/btn-rechazar/btn-rechazar.component';
+import {MasterURLService} from "./SERVICIOS/masterURL.service";
+import {UsuarioService} from "./SERVICIOS/Usuario.Service";
 
 
 @NgModule({
@@ -23,14 +29,18 @@ import { ButonTransferirComponent } from './componentesHijos/buton-transferir/bu
     AppComponent,
     LoginComponent,
     InicioComponent,
-    PerfilUsuarioComponent,
     NavBarMainComponent,
     UserPerfilComponent,
     ModeloHijoComponent,
     ModeloPapaComponent,
     ButonVisitarComponent,
-    TransferenciaComponent,
-    ButonTransferirComponent
+    ButonTransferirComponent,
+    PeticionTransferenciaComponent,
+    SolicitudTransferenciaComponent,
+    PerfilDelUsuarioComponent,
+    ItemPeticionComponent,
+    BtnAceptarComponent,
+    BtnRechazarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +50,7 @@ import { ButonTransferirComponent } from './componentesHijos/buton-transferir/bu
       Mis_Rutas,{useHash:true}
     )
   ],
-  providers: [],
+  providers: [MasterURLService,UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

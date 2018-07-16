@@ -24,7 +24,9 @@ export class PokemonController {
     @Post()
     crearPokemon(@Req() req,
                  @Res() res){
-        const nuevoPokemon = new PokemonClass(req.body.numeroPokemon,
+        const nuevoPokemon = new PokemonClass(
+            req.body.id,
+            req.body.numeroPokemon,
             req.body.nombrePokemon,
             req.body.poderEspecialUno,
             req.body.poderEspecialDos,

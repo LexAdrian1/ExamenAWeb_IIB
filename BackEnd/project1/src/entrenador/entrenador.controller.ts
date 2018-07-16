@@ -23,7 +23,9 @@ export class EntrenadorController {
     @Post()
     crearEntrenador(@Req() req,
                     @Res() res){
-        const nuevoEntrenador = new EntrenadorClass(req.body.nombres,
+        const nuevoEntrenador = new EntrenadorClass(
+            req.body.id,
+            req.body.nombres,
             req.body.apellidos,
             req.body.fechaNacimiento,
             req.body.numeroMedallas,

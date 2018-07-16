@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuarioClass} from "../misClases/usuario.Class";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-inicio',
@@ -10,6 +9,7 @@ import {Router} from "@angular/router";
 export class InicioComponent implements OnInit {
 
   user:UsuarioClass;
+  userName:string;
   constructor() { }
 
   ngOnInit() {
@@ -79,6 +79,13 @@ export class InicioComponent implements OnInit {
       nombreImagen: 'Edd.png'
     }
   ];
+
+  usuario(nombre:string){
+    console.log('ssssssssssssss'+nombre);
+    this.userName = nombre;
+    console.log('ss '+this.userName);
+
+  }
 
 
 }

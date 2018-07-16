@@ -1,14 +1,18 @@
 import {Routes} from "@angular/router";
 import {InicioComponent} from "./inicio/inicio.component";
-import {PerfilUsuarioComponent} from "./perfil/perfil-usuario.component";
-import {LoginComponent} from "./login/login.component";
 import {NavBarMainComponent} from "./nav-bar-main/nav-bar-main.component";
-import {TransferenciaComponent} from "./transferencia/transferencia.component";
+import {PeticionTransferenciaComponent} from "./peticion-transferencia/peticion-transferencia.component";
+import {SolicitudTransferenciaComponent} from "./solicitud-transferencia/solicitud-transferencia.component";
+import {PerfilDelUsuarioComponent} from "./perfil-del-usuario/perfil-del-usuario.component";
 
 export const Mis_Rutas:Routes = [
 
   {
-    component: PerfilUsuarioComponent,
+    component: PeticionTransferenciaComponent,
+    path: 'peticion'
+  },
+  {
+    component: PerfilDelUsuarioComponent,
     path: 'perfil'
   },
   {
@@ -20,13 +24,16 @@ export const Mis_Rutas:Routes = [
     path:'main'
   },
   {
-    component: TransferenciaComponent,
-    path: 'transferencia'
+    component: SolicitudTransferenciaComponent,
+    path: 'solicitud'
   },
   {
     path:'',
     redirectTo:'/busqueda',
     pathMatch: 'full'
+  },
+  {
+    path:'**',
+    component: InicioComponent
   }
-
 ];

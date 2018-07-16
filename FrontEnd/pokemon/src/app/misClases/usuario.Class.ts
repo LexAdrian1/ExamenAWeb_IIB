@@ -1,5 +1,8 @@
 export class UsuarioClass {
-  constructor(public correo?:string,
-              public password?:string){
+  constructor(
+    public nombre?: string,
+    public apellido?: string,
+    public correo?: string,
+    public password?: string) {
   }
 }

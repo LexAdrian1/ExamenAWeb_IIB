@@ -10,6 +10,7 @@ export class ModeloHijoComponent implements OnInit {
   @Input() atributoH1:string;
   @Input() atributoH2:string;
   @Input() imgHijo:string;
+  @Input() btn:string;
   constructor() { }
 
   ngOnInit() {
