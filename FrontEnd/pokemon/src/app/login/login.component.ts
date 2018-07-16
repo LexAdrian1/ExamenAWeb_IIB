@@ -38,9 +38,9 @@ export class LoginComponent implements OnInit {
       }
     );
 
-    if(usuario.correo==="kevin.jimenez@hotmail.com"){
+    if(usuario.correo==="alexis"){
       if(usuario.password==="1234"){
-        console.log('bienvenido');
+        console.log('Bienvenido');
         this.ingresarUser.emit(usuario);
       }else{
       console.log('error pass');
