@@ -1,5 +1,5 @@
-ls# Examen-WEB-2B
-ingreso al front end
+Examen-WEB-2B
+FrontEnd
 
 User: alexis
 Pass: 1234
