@@ -20,10 +20,10 @@ import {UsuarioService} from "./Usuarios/usuario.service";
       TypeOrmModule.forRoot({
           type: 'mysql',
           host: 'localhost',
-          port: 3306,
+          port: 3307,
           username: 'root',
           password: 'root',
-          database: 'examen2',
+          database: 'baseExamenIIB',
           entities: [__dirname + '/../**/*.entity{.ts,.js}'],
           synchronize: true}),
       TypeOrmModule.forFeature([PokemonEntity,EntrenadorEntity,UsuarioEntity])
