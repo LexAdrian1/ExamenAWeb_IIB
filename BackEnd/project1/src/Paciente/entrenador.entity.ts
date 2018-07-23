@@ -1,5 +1,5 @@
 import {Column, Entity, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
-import {PokemonEntity} from "../pokemon/pokemon.entity";
+import {PokemonEntity} from "../Medicamento/pokemon.entity";
 import {UsuarioEntity} from "../Usuarios/usuario.entity";
 
 @Entity('Entrenador')

@@ -50,7 +50,7 @@ export class EntrenadorController {
             return res.status(200).send(entrenadorEncontrado);
         } else {
             throw new PeticionNotFoundExeptions('no existe',
-                                                'En entrenador no se encuentra intenta de nuevo',
+                                                'En Paciente no se encuentra intenta de nuevo',
                                                 4);
         }
 
@@ -71,7 +71,7 @@ export class EntrenadorController {
             return res.status(200).send(entrenadorModificado);
         } else {
             throw new PeticionNotFoundExeptions('no existe',
-                'En entrenador no se encuentra intenta de nuevo',
+                'En Paciente no se encuentra intenta de nuevo',
                 4);
         }
 

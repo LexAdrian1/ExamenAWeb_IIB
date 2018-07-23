@@ -22,6 +22,7 @@ import { BtnAceptarComponent } from './componentesPerfil/btn-aceptar/btn-aceptar
 import { BtnRechazarComponent } from './componentesPerfil/btn-rechazar/btn-rechazar.component';
 import {MasterURLService} from "./SERVICIOS/masterURL.service";
 import {UsuarioService} from "./SERVICIOS/Usuario.Service";
+import { PerfiluserComponent } from './perfiluser/perfiluser.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {UsuarioService} from "./SERVICIOS/Usuario.Service";
     PerfilDelUsuarioComponent,
     ItemPeticionComponent,
     BtnAceptarComponent,
-    BtnRechazarComponent
+    BtnRechazarComponent,
+    PerfiluserComponent
   ],
   imports: [
     BrowserModule,

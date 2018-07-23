@@ -8,7 +8,7 @@ import {PeticionBadRequestExeptions} from "../execptions/Peticion-BadRequest.exe
 
 
 
-@Controller('pokemon')
+@Controller('Medicamento')
 export class PokemonController {
 
     constructor(private _pokemonService: PokemonService){}
